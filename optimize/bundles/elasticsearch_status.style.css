@@ -1,0 +1,59 @@
+.container {
+  margin-top: 30px;
+}
+.indexList {
+  list-style: circle;
+}
+.editor-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.editor-color > .form-group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  padding-right: 5px;
+}
+.editor-color > .form-group:last-child {
+  padding-right: 0;
+}
+.editor-color-remove {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.typeahead {
+  position: relative;
+}
+.typeahead .typeahead-items {
+  border: 1px solid;
+  border-color: rgba(153, 153, 153, 0.2);
+  color: #444444;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1030;
+  width: 100%;
+}
+.typeahead .typeahead-items .typeahead-item {
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(153, 153, 153, 0.2);
+  padding: 5px 15px;
+}
+.typeahead .typeahead-items .typeahead-item:last-child {
+  border-bottom: 0px;
+}
+.typeahead .typeahead-items .typeahead-item.active {
+  background-color: #ecf0f1;
+}
+.button-group .typeahead.visible .input-group > :first-child,
+.inline-form .typeahead.visible .input-group > :first-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.button-group .typeahead.visible .input-group > :last-child,
+.inline-form .typeahead.visible .input-group > :last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

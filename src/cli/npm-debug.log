@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   '-g',
+1 verbose cli   'install',
+1 verbose cli   'es-checker' ]
+2 info using npm@3.7.3
+3 info using node@v5.8.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData es-checker
+8 silly fetchNamedPackageData es-checker
+9 silly mapToRegistry name es-checker
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://172.19.83.80:7001/
+12 silly mapToRegistry uri http://172.19.83.80:7001/es-checker
+13 verbose request uri http://172.19.83.80:7001/es-checker
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:03:28
+16 verbose request id b5cee7279201e3b2
+17 http request GET http://172.19.83.80:7001/es-checker
+18 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 172.19.83.80:7001
+19 info attempt registry request try #2 at 10:03:59
+20 http request GET http://172.19.83.80:7001/es-checker
+21 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 172.19.83.80:7001
+22 info attempt registry request try #3 at 10:05:20
+23 http request GET http://172.19.83.80:7001/es-checker
+24 silly fetchPackageMetaData Error: connect ETIMEDOUT 172.19.83.80:7001
+24 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:890:11)
+24 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:913:20)
+24 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+24 silly fetchPackageMetaData  error for es-checker { [Error: connect ETIMEDOUT 172.19.83.80:7001]
+24 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+24 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+24 silly fetchPackageMetaData   syscall: 'connect',
+24 silly fetchPackageMetaData   address: '172.19.83.80',
+24 silly fetchPackageMetaData   port: 7001 }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ETIMEDOUT 172.19.83.80:7001
+30 verbose stack     at Object.exports._errnoException (util.js:890:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:913:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+31 verbose cwd D:\backup\research\kibana\kibana4.5\src\cli
+32 error Windows_NT 6.2.9200
+33 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "-g" "install" "es-checker"
+34 error node v5.8.0
+35 error npm  v3.7.3
+36 error code ETIMEDOUT
+37 error errno ETIMEDOUT
+38 error syscall connect
+39 error network connect ETIMEDOUT 172.19.83.80:7001
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
